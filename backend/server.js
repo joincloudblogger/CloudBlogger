@@ -14,6 +14,11 @@ const razorpay = new Razorpay({
   key_secret: process.env.RAZORPAY_KEY_SECRET
 });
 
+// Ping GET endpoint
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
+});
+
 // GET endpoint to test if server is running
 app.get('/', (req, res) => {
   res.json({ message: 'CloudBlogger API is running!' });
