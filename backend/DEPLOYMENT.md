@@ -4,6 +4,10 @@
 - Render account
 - Environment variables configured
 
+## Important Notes
+- The `dotenv` package is included in dependencies for environment variable loading
+- Make sure all environment variables are set in Render dashboard
+
 ## Environment Variables Required
 
 Create these environment variables in your Render dashboard:
